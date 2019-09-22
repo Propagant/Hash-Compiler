@@ -73,7 +73,7 @@ No example, use format above\
 Number or VarName {SPACE} Number or VarName}\
 **#RAND**\
 *• Get random number from/ to*\
-#RANDvalueFrom-ValueTo|");\
+#RANDvalueFrom-ValueTo|\
 \
 **Character-Related Functions**\
 **#SUBCHAR**\
