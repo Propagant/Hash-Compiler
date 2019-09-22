@@ -138,7 +138,7 @@ No example, check conditions\
 #CHAR>VarName:#CDIR;\
 **$**\
 *• Check if variable value can be converted to NUM datatype (useful in conditions).*\
-#IF_CharVarName - $}\
+#IF_CharVarName - $}
 
 Hash Editor Preview:\
 ![hasheditor](https://user-images.githubusercontent.com/22862602/65395281-0aa79380-dd99-11e9-8fd9-05599d970135.png)
