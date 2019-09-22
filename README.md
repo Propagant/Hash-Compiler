@@ -14,7 +14,8 @@ Hash Compiler is a language where every statement & command starts with **#** (o
 **Each line can hold just one statement**, otherwise the compiler will evaluate syntax error.
 
 *Last Semantics Update on 22/09/2019 (dd/mm/yyyy)*
-Semantics format: Category Name • Statement • Statement Description • Formal Statement Example\
+Semantics format:\
+Category Name • Statement • Statement Description • Formal Statement Example\
 \
 **System Essentials**\
 **#HELP**\
