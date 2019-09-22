@@ -9,7 +9,7 @@ Well, I wanted something more challenging as I love complications & I think it's
 ### **Syntax & Semantics**
 Hash Compiler is a language where every statement & command starts with **#** (obviously). Uses shortcuts which represent functional statements. Statements are divided into 2 types: Static & Dynamic statements. What is the difference?\
 • Static Statements (console-out/in, file-in/out) usually uses **;** character (or might be **|** or none) at the end of the line.\
-• Dynamic Statements *(calculations, conditions, substring)* uses **}** character at the end of the line.\
+• Dynamic Statements *(calculations, conditions, substring)* uses **}** character at the end of the line. Spaces between statements are very important, please write statements exactly as they are in their basic form.\
 *Why is that? Dynamic statements mostly continues in line below the statement.*\
 **Each line can hold just one statement**, otherwise the compiler will evaluate syntax error.
 
@@ -129,6 +129,9 @@ No example, check conditions\
 **#NUM_**\
 *• Convert variable value from CHAR to NUM (useful in variable value decleration).*\
 #NUM>VarName:#NUM_CharVarName;\
+**#CDIR**\
+*• Get current directory location (useful in CHAR variable value decleration).*\
+#CHAR>VarName:#CDIR;\
 **$**\
 *• Check if variable value can be converted to NUM datatype (useful in conditions).*\
 #IF_CharVarName - $}\
