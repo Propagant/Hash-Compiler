@@ -112,6 +112,7 @@ or\
 
 
 **Custom Functions & Methods**\
+*To declare any function, use - mark. Example: -MyFunctionName\*
 **#GOTO**\
 *• Jump to the specific line index.*\
 #GOTO 50\
