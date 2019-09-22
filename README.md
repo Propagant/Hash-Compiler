@@ -112,7 +112,7 @@ or\
 
 
 **Custom Functions & Methods**\
-*To declare any function, use **-** mark. Example: **-MyFunctionName***\
+*To declare any function, write any text in any line to represent function. Example: **MyFunctionName***\
 **#GOTO**\
 *• Jump to the specific line index.*\
 #GOTO 50\
