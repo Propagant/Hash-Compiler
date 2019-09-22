@@ -100,7 +100,7 @@ Number or VarName {SPACE} Number or VarName}\
 #LOOP or #LOOP CountOfLoops\
 ...Content...\
 !\
-'
+
 **Conditions**\
 **#IF_**\
 *• Two-valued condition system. Supports 6 operators: > (greater), < (less), = (equal for NUMS), - (equal for CHARS), ^ (not equal for NUMS), ! (not equal for CHARS).*\
@@ -108,7 +108,7 @@ Number or VarName {SPACE} Number or VarName}\
 ...Content...\
 or\
 #IF_VarName - #_HelloWorld}\
-...Content...\
+...Content...
 
 
 **Custom Functions & Methods**\
