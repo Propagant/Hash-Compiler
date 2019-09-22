@@ -102,7 +102,7 @@ Number or VarName {SPACE} Number or VarName}\
 *• Loop specific lines unlimitedly or limitedly. Ending with **!** and **NEW LINE**.*\
 #LOOP or #LOOP CountOfLoops\
 ...Content...\
-!\
+!
 
 **Conditions**\
 **#IF_**\
