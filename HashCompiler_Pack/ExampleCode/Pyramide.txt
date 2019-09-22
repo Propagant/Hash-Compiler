@@ -1,0 +1,71 @@
+Example code - Pyramide generator [created on 4/15/2017]
+
+#COPUTL
+#COPUT
+Welcome to the pyramide generator created in Hash Compiler Version 1.76
+#COPUTL2
+
+#COPUT
+Enter Graphic character:
+#CHAR>G:#CIPUT;
+#CHAR>S:NULL;
+
+#COPUTL
+
+#COPUT
+Enter Graphic size:
+#NUM>Size:#CIPUT;
+#CHAR>space: ;
+#SUBCHAR<0<1=graph<G}
+#COPUTL
+#COPUT
+Enter FPS [default:1]
+#NUM>fps:#CIPUT;
+#IF_fps < #_1}
+#CALC+fps
+fps 1}
+
+#CALC*FullSize
+Size 2}
+#CALC-IndexSize
+Size 1}
+
+#LOOP FullSize
+#ACHAR>G+graph;
+#ACHAR>S+space;
+!
+
+
+
+#NUM>cl:0;
+#NUM>cr:0;
+#CALC+cl
+cl IndexSize}
+
+#NUM>Zero:0;
+#CHAR>RLine:NULL;
+
+#LOOP Size
+
+#SUBCHAR<0<cl=S_L<S}
+#SUBCHAR<cl<1=G_L<G}
+
+#SUBCHAR<0<cr=S_R<S}
+
+#COPUT
+@S_L@@G_L@@S_R@@graph@@RLine@@graph@
+
+#ACHAR>RLine+space;
+
+#IF_cl > Zero}
+#CALC-cl
+cl 1}
+
+#IF_cr < FullSize}
+#CALC+cr
+cr 1}
+
+#SLEEP fps
+!
+
+#REPL(Would you like to try it again? Write y for yes)y>2;

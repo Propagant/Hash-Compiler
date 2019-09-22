@@ -1,0 +1,77 @@
+Example code - Calculator [Created On 4/15/2017  mm/dd/yy]
+
+#COPUTL
+#COPUT
+Welcome to the basic calculator created in Hash Compiler Version 1.76
+#COPUT
+Please, choose math operation mode: Addition[+], Division[/], Substraction[-], Multiplication[*]
+
+#CHAR>Mode:#CIPUT;
+
+#COPUTL
+
+#COPUT
+Your choice was @Mode@
+
+#NUM>Result:0;
+
+#COPUTL
+
+#COPUT
+Enter Number 1:
+
+#CHAR>N1:#CIPUT;
+
+#COPUT
+Enter Number 2:
+
+#CHAR>N2:#CIPUT;
+#IF_N1 - $}
+#GOTO 30
+#IF_N2 - $}
+#GOTO 38
+
+#COPUT
+Invalid number entry, try it again later...
+#CIP
+#0
+
+#IF_Mode - #_+}
+#GOTO 51
+#IF_Mode - #_-}
+#GOTO 56
+#IF_Mode - #_*}
+#GOTO 61
+#IF_Mode - #_/}
+#GOTO 66
+#COPUT
+Your operation mode was wrong, please try it again later...
+#CIP
+#0
+
+
+#CALC+Result
+#NUM_N1 #NUM_N2}
+#GOTO 71
+
+
+#CALC-Result
+#NUM_N1 #NUM_N2}
+#GOTO 71
+
+
+#CALC*Result
+#NUM_N1 #NUM_N2}
+#GOTO 71
+
+
+#CALC/Result
+#NUM_N1 #NUM_N2}
+
+
+#COPUTL2
+
+#COPUT
+@N1@ @Mode@ @N2@ = @Result@
+
+#REPL(Would you like to make another operation? Write y for yes)y>0;

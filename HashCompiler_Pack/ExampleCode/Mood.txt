@@ -1,0 +1,20 @@
+Example code - Mood [Created On 4/19/2017  mm/dd/yy]
+
+#COPUTL
+#COPUT
+Wanna have better mood? Check this out!
+#SLEEP 20
+#MOOD
+#NUM>R:#RAND0-10|;
+#SLEEP R
+#COPUTL
+
+#COPUT
+Wanna Try It Again? Write y
+#CHAR>Anws:#CIPUT;
+
+#IF_Anws - #_y}
+#GOTO 5
+#IF_Anws - #_Y}
+#GOTO 5
+#0

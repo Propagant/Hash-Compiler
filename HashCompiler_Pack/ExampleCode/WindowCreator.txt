@@ -1,0 +1,157 @@
+Example code - Window Generator [Created On 4/14/2017  mm/dd/yy]
+#COPUTL
+#COPUT
+Welcome to the Window Creator/ Generator created in Hash Compiler Version 1.75
+
+#COPUT
+Would you like to continue? Write y for Yes
+
+#CHAR>Answer:#CIPUT;
+#CHAR>Yes:y;
+
+#IF_Answer ! Yes}
+#0
+
+
+-------------------------------------
+                     GRID X and Y Variable
+#NUM>GridX:0;
+#NUM>GridY:0;
+                     GRID Graphical Variables
+#CHAR>GGraph: ;
+#CHAR>Space: ;
+
+#NUM>Zero:0;
+----------------------------------
+
+
+--------------------------
+                          Assignment GRID LENGTH
+#COPUT
+Enter Grid Length:
+#CALC+GridX
+GridX #CIPUT}
+--------------------------
+
+
+#COPUTL2
+
+
+--------------------------
+                         Assignment GRID HEIGHT
+#COPUT
+Enter Grid Height:
+#CALC+GridY
+GridY #CIPUT}
+--------------------------
+
+
+#COPUTL
+
+
+--------------------------
+                         Assignment GRID GRAPHIC
+#COPUT
+Enter Grid Graphic:
+#ACHAR>GGraph+#CIPUT;
+#SUBCHAR>1>1=GGraph}
+--------------------------
+
+
+#COPUTL
+
+
+--------------------------
+                         Reducing GRID X
+#CALC-GridX
+GridX 1}
+--------------------------
+
+--------------------------
+                         Creating New Variable For Grid Space Marker
+#CALC-GridXH
+GridX 1}
+--------------------------
+
+
+-------------------------
+                         Counter Of GRID X Generator Assignment
+#NUM>C_G:0;
+-------------------------
+
+-------------------------
+                         Creating Grid Space Marker End Graphic
+#CHAR>GHalf: ;
+-------------------------
+
+
+
+
+-------------------------       Generating Length Of Grid X [Preparing Graphs]
+#LOOP GridX
+
+#SUBCHAR<0<1=origin<GGraph}
+#ACHAR>GGraph+origin;
+
+#ACHAR>GHalf+Space;
+
+!
+
+#ACHAR>GGraph+origin;
+#ACHAR>GGraph+origin;
+
+#NUM>Infinity:0;
+#NUM>Three:0;
+#CHAR>Alt:0;
+
+#COPUT
+How many times to loop?
+#CALC+Three
+Three #CIPUT}
+
+#COPUTL2
+
+#CALC-GridYN
+GridY 1}
+#CHAR>G:0;
+
+
+------------------------------     Generating Height Of Grid Y
+
+
+
+#CALC*C_G
+C_G 0}
+
+#LOOP GridY
+
+#SUBCHAR<0<1=origin2<GGraph}
+
+#IF_C_G > Zero}
+#COPUT
+@origin2@@GHalf@@origin2@
+
+#IF_C_G = GridYN}
+#COPUT
+@GGraph@
+
+#IF_C_G = Zero}
+#COPUT
+@GGraph@
+
+#CALC+C_G
+C_G 1}
+
+#SLEEP 1
+!
+
+
+#CALC+Infinity
+Infinity 1}
+
+#IF_Infinity < Three}
+#GOTO 120
+#COPUTL2
+
+#COPUTL2
+#REPL(Would you like to try it again? Write y for yes)y>0;
