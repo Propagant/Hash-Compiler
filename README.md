@@ -135,7 +135,7 @@ Compiler ignores unknown characters, basically you can write anything else to ma
 
 
 **Parsers, Checkers & Connectors**\
-*Parsers allow you to convert specific variable value of one type to another type. For example, if we have a characteristic number of type **CHAR** and we would like to convert it to the numeric type **NUM**, Hash Compiler uses keyword **#NUM_**. But first of all, we must check if it's even POSSIBLE to do it, if the **CHAR value is a number**. To check if the CHAR value is a number, Hash Compiler uses **$** character in conditions.
+*Parsers allow you to convert specific variable value of one type to another type. For example, if we have a characteristic number of type **CHAR** and we would like to convert it to the numeric type **NUM**, Hash Compiler uses keyword **#NUM_**. But first of all, we must check if it's even POSSIBLE to do it, if the **CHAR value is a number**. To check if the CHAR value is a number, Hash Compiler uses **$** character in conditions.*
 
 | Statement | Description | Formal Example |
 | --- | --- | --- |
