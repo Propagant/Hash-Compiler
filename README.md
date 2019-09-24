@@ -6,6 +6,13 @@
 ### **Why did I wrote this language?**
 Well, I wanted something more challenging as I love complications & I think it's been done pretty well. I just love making unusual things especially initiative/creative applications where users can use their own logic and create something new in a short period of time. Also I wanted to expand my knowledge about programming and technology in general by practicing this kind of stuff!
 
+
+First Header | Second Header
+------------ | -------------
+Content from cell 1 | Content from cell 2
+Content in the first column | Content in the second column
+
+
 ### **Installation**
 It's important to install correct Hash Compiler version. If your CPU is 32bit, use 32bit Setup, otherwise use 64bit. I suggest to install Hash Compiler pack to **any other drive except C** *(If so, you wouldn't be able to create files)*.
 
