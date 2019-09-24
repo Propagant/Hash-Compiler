@@ -17,7 +17,12 @@ Hash Compiler is a language in which every statement & command starts with **#**
 **Each line can hold just one statement**, otherwise the compiler will evaluate syntax error.\
 Compiler ignores unknown characters, basically you can write anything else to make 'comments'.
 
+<br/>
+
 *Last Semantics Update on 22/09/2019 (dd/mm/yyyy)*
+
+<br/>
+<br/>
 
 **System Essentials**
 
@@ -31,7 +36,8 @@ Compiler ignores unknown characters, basically you can write anything else to ma
 | #REPL | *Interactive and returnable question. Quick alternative for conditions* | `#REPL(Anything to ask)CharResultToEqual>ToLineIndex;` |
 | #0 | *Quit solution & program* | `#0` |
 
-
+<br/>
+<br/>
 
 **Variable Declerations**
 
@@ -40,7 +46,8 @@ Compiler ignores unknown characters, basically you can write anything else to ma
 | #NUM | *Any unsigned natural number variable decleration. Use NULL for null value* | `#NUM>VarName:VarValue;` |
 | #CHAR | *Any characteristic variable decleration. Use NULL for null value* | `#CHAR>VarName:VarValue;` |
 
-
+<br/>
+<br/>
 
 **Console Input-Output**
 
@@ -51,7 +58,8 @@ Compiler ignores unknown characters, basically you can write anything else to ma
 | #CIPUT | *Console input* | `#CHAR>VarName:#CIPUT;` |
 | #CIP | *Stops the program and waits for user's interaction* | `#CIP` |
 
-
+<br/>
+<br/>
 
 **Math & Calculations**
 
@@ -60,7 +68,8 @@ Compiler ignores unknown characters, basically you can write anything else to ma
 | #CALC | *Default calculation process of natural numbers. You can create a new variable by adding VarName after operation symbol* | `#CALC+ or #CALC/VarName{NEWLINE}Number or VarName {SPACE} Number or VarName}` |
 | #RAND | *Get random number from-to* | `#NUM>VarName:#RANDvalueFrom-ValueTo|` |
 
-
+<br/>
+<br/>
 
 **Character-Related Functions**
 
@@ -70,7 +79,8 @@ Compiler ignores unknown characters, basically you can write anything else to ma
 | #SUBCHAR | *Substring or divide character variable & create new variable* | `#SUBCHAR<StartIndex<Length=NewCHARVariable<FromExistsCHARVariable}` |
 | #ACHAR | *dd characters to exist variable* | `#SUBCHAR>VarName1+VarName2;` |
 
-
+<br/>
+<br/>
 
 **File Streaming (Create, Delete, Read)**
 
@@ -80,7 +90,8 @@ Compiler ignores unknown characters, basically you can write anything else to ma
 | #RFILETRANS | *Read data from file in exists path. Use **~** to replace **:** character in the variable assignment ONLY* | `#RFILETRANSfilename!fileextension;` |
 | #DFILETRANS | *Delete file in exists path. Use **~** to replace **:** character in the variable assignment ONLY* | `#DFILETRANSfilename!fileextension;` |
 
-
+<br/>
+<br/>
 
 **Looping/ Repeating**
 
@@ -88,7 +99,8 @@ Compiler ignores unknown characters, basically you can write anything else to ma
 | --- | --- | --- |
 | #LOOP | *Loop specific lines limitedly. Ending with **!** and **NEW LINE*** | `#LOOP or #LOOP CountOfLoops{NEWLINE}...Content.. {NEWLINE}!` |
 
-
+<br/>
+<br/>
 
 **Conditions**
 
@@ -99,18 +111,19 @@ Compiler ignores unknown characters, basically you can write anything else to ma
 
 <br/>
 <br/>
-<br/>
 
 
 **Custom Functions & Methods**\
 *Functions allow you to make your code much more clear. For example, if you would like to process some kind of calculations, you will simply write DoCalculation and the specific function will be called. To declare any function, write any text in any line to represent the function. Example: **MyFunctionName{NEWLINE}...Content...***
-
 
 | Statement | Description | Formal Example |
 | --- | --- | --- |
 | #GOTO | *Jump to the specific line index by line number* | `#GOTO LineIndexNumber` |
 | #FGOTO | *Jump to the specific line index by function name* | `#FGOTO FunctionName` |
 
+
+<br/>
+<br/>
 
 
 **Parsers, Checkers & Connectors**
@@ -123,7 +136,8 @@ Compiler ignores unknown characters, basically you can write anything else to ma
 | #CDIR | *Get current directory location (useful in CHAR variable value decleration)* | `#CHAR>VarName:#CDIR;` |
 | #$ | *Check if variable value can be converted to NUM datatype (useful in conditions)* | `#IF_CharVarName - $}` |
 
-
+<br/>
+<br/>
 
 Hash Editor Preview:\
 ![hasheditor](https://user-images.githubusercontent.com/22862602/65395281-0aa79380-dd99-11e9-8fd9-05599d970135.png)
