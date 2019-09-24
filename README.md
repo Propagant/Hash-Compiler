@@ -17,130 +17,110 @@ Hash Compiler is a language in which every statement & command starts with **#**
 **Each line can hold just one statement**, otherwise the compiler will evaluate syntax error.
 
 *Last Semantics Update on 22/09/2019 (dd/mm/yyyy)*
-Semantics format:\
-Category Name • Statement • Statement Description • Formal Statement Example\
+
 \
+
 **System Essentials**\
 
 | Statement | Description | Formal Example |
 | --- | --- | --- |
-| #HELP | *Full documentation with all statements will be shown in console* | No example, use format above |
+| #HELP | *Full documentation will be shown in console* | No example, use format above |
+| #DATE | *Get actual date format* | `#CHAR>VarName:#DATE;` |
+| #GET_VAR | *Get all internal variables by name in lines (-l) by name in rows (-r) by value in lines (-v) by value in rows (-vr) & get count of available variables (-n)* | `#GET_VAR-vr` |
+| #SLEEP | *Pause program in a specific period of time (miliseconds)* | `#SLEEP NumericValue` |
+| #MOOD | *Special & fun statement to improve your mood. Get a better mood!* | `#MOOD` |
+| #REPL | *Interactive and returnable question. Quick alternative for conditions* | `#REPL(Anything to ask)CharResultToEqual>ToLineIndex;` |
+| #0 | *Quit solution & program* | `#0` |
 
-**#DATE**\
-*• Get actual date format*\
-No example, use format above\
-**#GET_VAR**\
-*• Get all internal variables by name in lines (-l) by name in rows (-r) by value in lines (-v) by value in rows (-vr) & get count of available variables (-n)*\
-#GET_VAR-vr\
-**#SLEEP**\
-*• Program will sleep in a specific period of time (miliseconds)*\
-#SLEEP Count\
-**#MOOD**\
-*• Special & fun statement to improve your mood. Get a better mood!*\
-No example, use format above\
-**#REPL**\
-*• Make interactive and returnable question. Alternative for Conditions.*\
-#REPL(Anything to ask)ResultToEqual>ToLineIndex;\
-**#0**\
-*• Quit solution*\
-No example, use format above\
 \
+
 **Variable Declerations**\
-**#NUM**\
-*• Any unsigned whole number variable decleration*\
-#NUM>VarName:VarValue;\
-**#CHAR**\
-*• Any characteristic variable decleration*\
-#CHAR>VarName:VarValue; *(use NULL for null value)*\
+
+| Statement | Description | Formal Example |
+| --- | --- | --- |
+| #NUM | *Any unsigned natural number variable decleration. Use NULL for null value* | `#NUM>VarName:VarValue;` |
+| #CHAR | *Any characteristic variable decleration. Use NULL for null value* | `#CHAR>VarName:VarValue;` |
+
 \
+
 **Console Input-Output**\
-**#COPUT**\
-*• Console output. Use @VarName@ for variable mention.*\
-#COPUT\
-Value or @VarName@ or #FunctionName\
-**#COPUTL**\
-*• Create new line in console output*\
-#COPUTL or #COPUTL CountOfNewLines\
-**#CIPUT**\
-*• Console input*\
-#CHAR>VarName:#CIPUT;\
-**#CIP**\
-*• Literally 'press any key to continue'*\
-No example, use format above\
+
+| Statement | Description | Formal Example |
+| --- | --- | --- |
+| #COPUT | *Console output. Use **@VarName@** for variable mention* | `#COPUT{NEWLINE}Value or @VarName@` |
+| #COPUTL | *Create new line in console output* | `#COPUTL or #COPUTL CountOfNewLines` |
+| #CIPUT | *Console input* | `#CHAR>VarName:#CIPUT;` |
+| #CIP | *Stops the program and waits for user's interaction* | `#CIP` |
+
 \
+
 **Math & Calculations**\
-**#CALC**\
-*• Default calculation process of natural numbers. You can create a new variable by adding VARNAME after operation symbol.*\
-#CALC+ or #CALC/VarName\
-Number or VarName {SPACE} Number or VarName}\
-**#RAND**\
-*• Get random number from/ to*\
-#RANDvalueFrom-ValueTo|\
+
+| Statement | Description | Formal Example |
+| --- | --- | --- |
+| #CALC | *Default calculation process of natural numbers. You can create a new variable by adding VarName after operation symbol* | `#CALC+ or #CALC/VarName{NEWLINE}Number or VarName {SPACE} Number or VarName}` |
+| #RAND | *Get random number from-to* | `#NUM>VarName:#RANDvalueFrom-ValueTo|` |
+
 \
+
 **Character-Related Functions**\
-**#SUBCHAR**\
-*• Substring or divide character variable*\
-#SUBCHAR>StartIndex>Length=ToExistsCHARVariable}\
-**#SUBCHAR**\
-*• Substring or divide character variable. General difference is creating new variable.*\
-#SUBCHAR<StartIndex<Length=NewCHARVariable<FromExistsCHARVariable}\
-**#ACHAR**\
-*• Add characters to exist variable*\
-#SUBCHAR>VarName1+VarName2;\
+
+| Statement | Description | Formal Example |
+| --- | --- | --- |
+| #SUBCHAR | *Substring or divide character variable* | `#SUBCHAR>StartIndex>Length=ToExistsCHARVariable}` |
+| #SUBCHAR | *Substring or divide character variable & create new variable* | `#SUBCHAR<StartIndex<Length=NewCHARVariable<FromExistsCHARVariable}` |
+| #ACHAR | *dd characters to exist variable* | `#SUBCHAR>VarName1+VarName2;` |
+
 \
+
 **File Streaming (Create, Delete, Read)**\
-**#FILETRANS**\
-*• Create new file in exists path. Use **~** to replace **:** character in the variable assignment ONLY.*\
-#FILETRANSfilename!filecontent!fileextension;\
-**#RFILETRANS**\
-*• Read data from file in exists path. Use **~** to replace **:** character in the variable assignment ONLY.*\
-#RFILETRANSfilename!fileextension;\
-**#DFILETRANS**\
-*• Delete file in exists path. Use **~** to replace **:** character in the variable assignment ONLY.*\
-#DFILETRANSfilename!fileextension;\
+
+| Statement | Description | Formal Example |
+| --- | --- | --- |
+| #FILETRANS | *Create new file in exists path. Use **~** to replace **:** character in the variable assignment ONLY* | `#FILETRANSfilename!filecontent!fileextension;` |
+| #RFILETRANS | *Read data from file in exists path. Use **~** to replace **:** character in the variable assignment ONLY* | `#RFILETRANSfilename!fileextension;` |
+| #DFILETRANS | *Delete file in exists path. Use **~** to replace **:** character in the variable assignment ONLY* | `#DFILETRANSfilename!fileextension;` |
+
 \
+
 **Looping/ Repeating**\
-**#LOOP**\
-*• Loop specific lines unlimitedly or limitedly. Ending with **!** and **NEW LINE**.*\
-#LOOP or #LOOP CountOfLoops\
-...Content...\
-!
+
+| Statement | Description | Formal Example |
+| --- | --- | --- |
+| #LOOP | *Loop specific lines limitedly. Ending with **!** and **NEW LINE*** | `#LOOP or #LOOP CountOfLoops{NEWLINE}...Content...{NEWLINE}
+!` |
+
+\
 
 **Conditions**\
-**#IF_**\
-*• Two-valued condition system. Supports 6 operators: > (greater), < (less), = (equal for NUMS), - (equal for CHARS), ^ (not equal for NUMS), ! (not equal for CHARS).*\
-#IF_VarName = VarName}\
-...Content...\
-or\
-#IF_VarName - #_HelloWorld}\
-...Content...
 
+| Statement | Description | Formal Example |
+| --- | --- | --- |
+| #IF_ | *Two-valued condition system. Supports 6 operators: > (greater), < (less), = (equal for NUMS), - (equal for CHARS), ^ (not equal for NUMS), ! (not equal for CHARS)* | `#IF_VarName = VarName}{NEWLINE}...Content...` or `#IF_VarName - #_HelloWorld}{NEWLINE}...Content...` |
+
+\
 
 **Custom Functions & Methods**\
 *To declare any function, write any text in any line to represent function. Example: **MyFunctionName***\
-**#GOTO**\
-*• Jump to the specific line index.*\
-#GOTO 50\
-**#FGOTO**\
-*• Jump to the specific line index by function name.*\
-#FGOTO FunctionName\
+
+| Statement | Description | Formal Example |
+| --- | --- | --- |
+| #GOTO | *Jump to the specific line index by line number* | `#GOTO LineIndexNumber` |
+| #FGOTO | *Jump to the specific line index by function name* | `#FGOTO FunctionName` |
+
 \
+
 **Parsers, Checkers & Connectors**\
-**#.VARNAME**\
-*• Get length of variable value of type CHAR*\
-#CHAR>VarName:#.VarName;\
-**#_ANYTHING**\
-*• Write plane text (useful in Conditions. Check conditions example).*\
-No example, check conditions\
-**#NUM_**\
-*• Convert variable value from CHAR to NUM (useful in variable value decleration).*\
-#NUM>VarName:#NUM_CharVarName;\
-**#CDIR**\
-*• Get current directory location (useful in CHAR variable value decleration).*\
-#CHAR>VarName:#CDIR;\
-**$**\
-*• Check if variable value can be converted to NUM datatype (useful in conditions).*\
-#IF_CharVarName - $}
+
+| Statement | Description | Formal Example |
+| --- | --- | --- |
+| #.VARNAME | *Get length of variable value of type CHAR* | `#CHAR>VarName:#.VarName;` |
+| #_ANYTHING | *Write plane text (useful in conditions. Check conditions example)* | `#IF_VarName - #_Hey!}` |
+| #NUM_ | *Convert variable value from CHAR to NUM (useful in variable value decleration)* | `#NUM>VarName:#NUM_CharVarName;` |
+| #CDIR | *Get current directory location (useful in CHAR variable value decleration)* | `#CHAR>VarName:#CDIR;` |
+| #$ | *Check if variable value can be converted to NUM datatype (useful in conditions)* | `#IF_CharVarName - $}` |
+
+\
 
 Hash Editor Preview:\
 ![hasheditor](https://user-images.githubusercontent.com/22862602/65395281-0aa79380-dd99-11e9-8fd9-05599d970135.png)
