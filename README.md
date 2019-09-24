@@ -14,7 +14,8 @@ Hash Compiler is a language in which every statement & command starts with **#**
 • Static Statements (console-out/in, file-in/out) usually use **;** character (or might be **|** or none) at the end of the line.\
 • Dynamic Statements *(calculations, conditions, substring)* use **}** character at the end of the line. Spaces between statements are very important, please write statements exactly as they are in their basic form & try not to make additional spaces.\
 *Why is that? Dynamic statements mostly continues in line below the statement.*\
-**Each line can hold just one statement**, otherwise the compiler will evaluate syntax error.
+**Each line can hold just one statement**, otherwise the compiler will evaluate syntax error.\
+Compiler ignores unknown characters, basically you can write anything else to make 'comments'.
 
 *Last Semantics Update on 22/09/2019 (dd/mm/yyyy)*
 
@@ -96,10 +97,11 @@ Hash Compiler is a language in which every statement & command starts with **#**
 | #IF_ | *Two-valued condition system. Supports 6 operators: > (greater), < (less), = (equal for NUMS), - (equal for CHARS), ^ (not equal for NUMS), ! (not equal for CHARS)* | `#IF_VarName = VarName}{NEWLINE}...Content...` or `#IF_VarName - #_HelloWorld}{NEWLINE}...Content...` |
 
 
+_______________________________________________________________________________________________________________
 
 
 **Custom Functions & Methods**\
-*To declare any function, write any text in any line to represent function. Example: **MyFunctionName***
+*Functions allow you to make your code much more clear. For example, if you would like to process some kind of calculations, you will simply write DoCalculation and the specific function will be called. To declare any function, write any text in any line to represent the function. Example: **MyFunctionName{NEWLINE}...Content...***
 
 
 | Statement | Description | Formal Example |
