@@ -97,8 +97,10 @@ Hash Compiler is a language in which every statement & command starts with **#**
 
 
 
-**Custom Functions & Methods**
-*To declare any function, write any text in any line to represent function. Example: **MyFunctionName***\
+
+**Custom Functions & Methods**\
+*To declare any function, write any text in any line to represent function. Example: **MyFunctionName***
+
 
 | Statement | Description | Formal Example |
 | --- | --- | --- |
