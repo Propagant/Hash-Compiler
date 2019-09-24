@@ -96,7 +96,8 @@ Compiler ignores unknown characters, basically you can write anything else to ma
 | --- | --- | --- |
 | #IF_ | *Two-valued condition system. Supports 6 operators: > (greater), < (less), = (equal for NUMS), - (equal for CHARS), ^ (not equal for NUMS), ! (not equal for CHARS)* | `#IF_VarName = VarName}{NEWLINE}...Content...` or `#IF_VarName - #_HelloWorld}{NEWLINE}...Content...` |
 
-\
+
+_______________________________________________________________________________________________
 _______________________________________________________________________________________________
 
 
