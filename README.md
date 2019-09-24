@@ -21,9 +21,11 @@ Semantics format:\
 Category Name • Statement • Statement Description • Formal Statement Example\
 \
 **System Essentials**\
+
 | Statement | Description | Formal Example |
 | --- | --- | --- |
 | #HELP | *Full documentation with all statements will be shown in console* | No example, use format above |
+
 **#DATE**\
 *• Get actual date format*\
 No example, use format above\
