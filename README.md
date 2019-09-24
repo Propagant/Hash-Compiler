@@ -96,9 +96,9 @@ Compiler ignores unknown characters, basically you can write anything else to ma
 | --- | --- | --- |
 | #IF_ | *Two-valued condition system. Supports 6 operators: > (greater), < (less), = (equal for NUMS), - (equal for CHARS), ^ (not equal for NUMS), ! (not equal for CHARS)* | `#IF_VarName = VarName}{NEWLINE}...Content...` or `#IF_VarName - #_HelloWorld}{NEWLINE}...Content...` |
 
-
-_______________________________________________________________________________________________________________
-
+\
+_______________________________________________________________________________________________\
+\
 
 **Custom Functions & Methods**\
 *Functions allow you to make your code much more clear. For example, if you would like to process some kind of calculations, you will simply write DoCalculation and the specific function will be called. To declare any function, write any text in any line to represent the function. Example: **MyFunctionName{NEWLINE}...Content...***
