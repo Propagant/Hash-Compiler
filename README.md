@@ -24,7 +24,7 @@ Compiler ignores unknown characters, basically you can write anything else to ma
 <br/>
 <br/>
 
-**System Essentials**
+**System Essentials**\
 *System essential statements built in Hash Compiler.*
 
 | Statement | Description | Formal Example |
@@ -40,7 +40,7 @@ Compiler ignores unknown characters, basically you can write anything else to ma
 <br/>
 <br/>
 
-**Variable Declerations**
+**Variable Declerations**\
 *General variable decleration. Exist variables will be replaced.*
 
 | Statement | Description | Formal Example |
@@ -51,7 +51,7 @@ Compiler ignores unknown characters, basically you can write anything else to ma
 <br/>
 <br/>
 
-**Console Input-Output**
+**Console Input-Output**\
 *Default console input-output statements.*
 
 | Statement | Description | Formal Example |
@@ -64,7 +64,7 @@ Compiler ignores unknown characters, basically you can write anything else to ma
 <br/>
 <br/>
 
-**Math & Calculations**
+**Math & Calculations**\
 *Basic math functions & calculations. Calculations can be proceed with variables of type NUM only. Variables of type CHAR use Character-Related Functions.*
 
 | Statement | Description | Formal Example |
@@ -75,7 +75,7 @@ Compiler ignores unknown characters, basically you can write anything else to ma
 <br/>
 <br/>
 
-**Character-Related Functions**
+**Character-Related Functions**\
 *Main functions for CHAR datatype. Substring (divide/cut) variable value of type CHAR or add new characters to the variable value of type CHAR.*
 
 | Statement | Description | Formal Example |
@@ -87,7 +87,7 @@ Compiler ignores unknown characters, basically you can write anything else to ma
 <br/>
 <br/>
 
-**File Streaming (Create, Delete, Read)**
+**File Streaming (Create, Delete, Read)**\
 *File streaming allows you to control your files/ folders in your computer. It might be very risky as you can clearly delete your important folder or even drive. Testing on external & empty drive is recommended.*
 
 | Statement | Description | Formal Example |
@@ -99,7 +99,7 @@ Compiler ignores unknown characters, basically you can write anything else to ma
 <br/>
 <br/>
 
-**Looping/ Repeating**
+**Looping/ Repeating**\
 *Looping or repeating allows you to repeat specific lines of code by included count.*
 
 | Statement | Description | Formal Example |
@@ -109,7 +109,7 @@ Compiler ignores unknown characters, basically you can write anything else to ma
 <br/>
 <br/>
 
-**Conditions**
+**Conditions**\
 *Hash Compiler contains **two-valued condition system** which is a bit limited but it's far enough. Conditions in Hash Compiler have a very limited perspective because the result can be proceed just once, but you can **avoid** this limitation by **jumping to the specific line or function** writing **#FGOTO** or **#GOTO** (More in Custom Functions & Methods). You can use variables or custom characters by **#_** keyword (More in Parsers) and compare the result by the available operators (More below).*
 
 | Statement | Description | Formal Example |
@@ -134,7 +134,7 @@ Compiler ignores unknown characters, basically you can write anything else to ma
 <br/>
 
 
-**Parsers, Checkers & Connectors**
+**Parsers, Checkers & Connectors**\
 *Parsers allow you to convert specific variable value of one type to another type. For example, if we have a characteristic number of type **CHAR** and we would like to convert it to the numeric type **NUM**, Hash Compiler uses keyword **#NUM_**. But first of all, we must check if it's even POSSIBLE to do it, if the **CHAR value is a number**. To check if the CHAR value is a number, Hash Compiler uses **$** character in conditions.
 
 | Statement | Description | Formal Example |
