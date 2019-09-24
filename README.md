@@ -18,9 +18,7 @@ Hash Compiler is a language in which every statement & command starts with **#**
 
 *Last Semantics Update on 22/09/2019 (dd/mm/yyyy)*
 
-\
-
-**System Essentials**\
+**System Essentials**
 
 | Statement | Description | Formal Example |
 | --- | --- | --- |
@@ -32,18 +30,18 @@ Hash Compiler is a language in which every statement & command starts with **#**
 | #REPL | *Interactive and returnable question. Quick alternative for conditions* | `#REPL(Anything to ask)CharResultToEqual>ToLineIndex;` |
 | #0 | *Quit solution & program* | `#0` |
 
-\
 
-**Variable Declerations**\
+
+**Variable Declerations**
 
 | Statement | Description | Formal Example |
 | --- | --- | --- |
 | #NUM | *Any unsigned natural number variable decleration. Use NULL for null value* | `#NUM>VarName:VarValue;` |
 | #CHAR | *Any characteristic variable decleration. Use NULL for null value* | `#CHAR>VarName:VarValue;` |
 
-\
 
-**Console Input-Output**\
+
+**Console Input-Output**
 
 | Statement | Description | Formal Example |
 | --- | --- | --- |
@@ -52,18 +50,18 @@ Hash Compiler is a language in which every statement & command starts with **#**
 | #CIPUT | *Console input* | `#CHAR>VarName:#CIPUT;` |
 | #CIP | *Stops the program and waits for user's interaction* | `#CIP` |
 
-\
 
-**Math & Calculations**\
+
+**Math & Calculations**
 
 | Statement | Description | Formal Example |
 | --- | --- | --- |
 | #CALC | *Default calculation process of natural numbers. You can create a new variable by adding VarName after operation symbol* | `#CALC+ or #CALC/VarName{NEWLINE}Number or VarName {SPACE} Number or VarName}` |
 | #RAND | *Get random number from-to* | `#NUM>VarName:#RANDvalueFrom-ValueTo|` |
 
-\
 
-**Character-Related Functions**\
+
+**Character-Related Functions**
 
 | Statement | Description | Formal Example |
 | --- | --- | --- |
@@ -71,9 +69,9 @@ Hash Compiler is a language in which every statement & command starts with **#**
 | #SUBCHAR | *Substring or divide character variable & create new variable* | `#SUBCHAR<StartIndex<Length=NewCHARVariable<FromExistsCHARVariable}` |
 | #ACHAR | *dd characters to exist variable* | `#SUBCHAR>VarName1+VarName2;` |
 
-\
 
-**File Streaming (Create, Delete, Read)**\
+
+**File Streaming (Create, Delete, Read)**
 
 | Statement | Description | Formal Example |
 | --- | --- | --- |
@@ -81,26 +79,25 @@ Hash Compiler is a language in which every statement & command starts with **#**
 | #RFILETRANS | *Read data from file in exists path. Use **~** to replace **:** character in the variable assignment ONLY* | `#RFILETRANSfilename!fileextension;` |
 | #DFILETRANS | *Delete file in exists path. Use **~** to replace **:** character in the variable assignment ONLY* | `#DFILETRANSfilename!fileextension;` |
 
-\
 
-**Looping/ Repeating**\
+
+**Looping/ Repeating**
 
 | Statement | Description | Formal Example |
 | --- | --- | --- |
-| #LOOP | *Loop specific lines limitedly. Ending with **!** and **NEW LINE*** | `#LOOP or #LOOP CountOfLoops{NEWLINE}...Content...{NEWLINE}
-!` |
+| #LOOP | *Loop specific lines limitedly. Ending with **!** and **NEW LINE*** | `#LOOP or #LOOP CountOfLoops{NEWLINE}...Content.. {NEWLINE}!` |
 
-\
 
-**Conditions**\
+
+**Conditions**
 
 | Statement | Description | Formal Example |
 | --- | --- | --- |
 | #IF_ | *Two-valued condition system. Supports 6 operators: > (greater), < (less), = (equal for NUMS), - (equal for CHARS), ^ (not equal for NUMS), ! (not equal for CHARS)* | `#IF_VarName = VarName}{NEWLINE}...Content...` or `#IF_VarName - #_HelloWorld}{NEWLINE}...Content...` |
 
-\
 
-**Custom Functions & Methods**\
+
+**Custom Functions & Methods**
 *To declare any function, write any text in any line to represent function. Example: **MyFunctionName***\
 
 | Statement | Description | Formal Example |
@@ -108,9 +105,9 @@ Hash Compiler is a language in which every statement & command starts with **#**
 | #GOTO | *Jump to the specific line index by line number* | `#GOTO LineIndexNumber` |
 | #FGOTO | *Jump to the specific line index by function name* | `#FGOTO FunctionName` |
 
-\
 
-**Parsers, Checkers & Connectors**\
+
+**Parsers, Checkers & Connectors**
 
 | Statement | Description | Formal Example |
 | --- | --- | --- |
@@ -120,7 +117,7 @@ Hash Compiler is a language in which every statement & command starts with **#**
 | #CDIR | *Get current directory location (useful in CHAR variable value decleration)* | `#CHAR>VarName:#CDIR;` |
 | #$ | *Check if variable value can be converted to NUM datatype (useful in conditions)* | `#IF_CharVarName - $}` |
 
-\
+
 
 Hash Editor Preview:\
 ![hasheditor](https://user-images.githubusercontent.com/22862602/65395281-0aa79380-dd99-11e9-8fd9-05599d970135.png)
