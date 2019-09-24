@@ -26,6 +26,7 @@ Compiler ignores unknown characters, basically you can write anything else to ma
 
 **System Essentials**
 *System essential statements built in Hash Compiler.*
+
 | Statement | Description | Formal Example |
 | --- | --- | --- |
 | #HELP | *Full documentation will be shown in console* | No example, use format above |
@@ -41,6 +42,7 @@ Compiler ignores unknown characters, basically you can write anything else to ma
 
 **Variable Declerations**
 *General variable decleration. Exist variables will be replaced.*
+
 | Statement | Description | Formal Example |
 | --- | --- | --- |
 | #NUM | *Any unsigned natural number variable decleration. Use NULL for null value* | `#NUM>VarName:VarValue;` |
@@ -51,6 +53,7 @@ Compiler ignores unknown characters, basically you can write anything else to ma
 
 **Console Input-Output**
 *Default console input-output statements.*
+
 | Statement | Description | Formal Example |
 | --- | --- | --- |
 | #COPUT | *Console output. Use **@VarName@** for variable mention* | `#COPUT{NEWLINE}Value or @VarName@` |
@@ -63,6 +66,7 @@ Compiler ignores unknown characters, basically you can write anything else to ma
 
 **Math & Calculations**
 *Basic math functions & calculations. Calculations can be proceed with variables of type NUM only. Variables of type CHAR use Character-Related Functions.*
+
 | Statement | Description | Formal Example |
 | --- | --- | --- |
 | #CALC | *Default calculation process of natural numbers. You can create a new variable by adding VarName after operation symbol* | `#CALC+ or #CALC/VarName{NEWLINE}Number or VarName {SPACE} Number or VarName}` |
@@ -73,6 +77,7 @@ Compiler ignores unknown characters, basically you can write anything else to ma
 
 **Character-Related Functions**
 *Main functions for CHAR datatype. Substring (divide/cut) variable value of type CHAR or add new characters to the variable value of type CHAR.*
+
 | Statement | Description | Formal Example |
 | --- | --- | --- |
 | #SUBCHAR | *Substring or divide character variable* | `#SUBCHAR>StartIndex>Length=ToExistsCHARVariable}` |
@@ -84,6 +89,7 @@ Compiler ignores unknown characters, basically you can write anything else to ma
 
 **File Streaming (Create, Delete, Read)**
 *File streaming allows you to control your files/ folders in your computer. It might be very risky as you can clearly delete your important folder or even drive. Testing on external & empty drive is recommended.*
+
 | Statement | Description | Formal Example |
 | --- | --- | --- |
 | #FILETRANS | *Create new file in exists path. Use **~** to replace **:** character in the variable assignment ONLY* | `#FILETRANSfilename!filecontent!fileextension;` |
@@ -95,6 +101,7 @@ Compiler ignores unknown characters, basically you can write anything else to ma
 
 **Looping/ Repeating**
 *Looping or repeating allows you to repeat specific lines of code by included count.*
+
 | Statement | Description | Formal Example |
 | --- | --- | --- |
 | #LOOP | *Loop specific lines limitedly. Ending with **!** and **NEW LINE*** | `#LOOP or #LOOP CountOfLoops{NEWLINE}...Content.. {NEWLINE}!` |
@@ -104,6 +111,7 @@ Compiler ignores unknown characters, basically you can write anything else to ma
 
 **Conditions**
 *Hash Compiler contains **two-valued condition system** which is a bit limited but it's far enough. Conditions in Hash Compiler have a very limited perspective because the result can be proceed just once, but you can **avoid** this limitation by **jumping to the specific line or function** writing **#FGOTO** or **#GOTO** (More in Custom Functions & Methods). You can use variables or custom characters by **#_** keyword (More in Parsers) and compare the result by the available operators (More below).*
+
 | Statement | Description | Formal Example |
 | --- | --- | --- |
 | #IF_ | *Two-valued condition system. Supports 6 operators: > (greater), < (less), = (equal for NUMS), - (equal for CHARS), ^ (not equal for NUMS), ! (not equal for CHARS)* | `#IF_VarName = VarName}{NEWLINE}...Content...` or `#IF_VarName - #_HelloWorld}{NEWLINE}...Content...` |
@@ -128,6 +136,7 @@ Compiler ignores unknown characters, basically you can write anything else to ma
 
 **Parsers, Checkers & Connectors**
 *Parsers allow you to convert specific variable value of one type to another type. For example, if we have a characteristic number of type **CHAR** and we would like to convert it to the numeric type **NUM**, Hash Compiler uses keyword **#NUM_**. But first of all, we must check if it's even POSSIBLE to do it, if the **CHAR value is a number**. To check if the CHAR value is a number, Hash Compiler uses **$** character in conditions.
+
 | Statement | Description | Formal Example |
 | --- | --- | --- |
 | #.VARNAME | *Get length of variable value of type CHAR* | `#CHAR>VarName:#.VarName;` |
