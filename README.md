@@ -1,16 +1,16 @@
 # Hash-Compiler
 ![hash](https://user-images.githubusercontent.com/22862602/65395296-3fb3e600-dd99-11e9-9b96-47f0abf987cd.png)
 ### **About**
-**Hash Compiler** is an objective & linear language with full semantic explanation & description. The development started in 2017, I was student on high school playing around with advanced functions and trying to make something initiative. The language itself is very easy to understand, uses shortcuts, supports dynamic variables, custom functions, ‘line jumps’, file streaming Input/Output & additional user-friendly methods. Compiler runs linearly starting by zero line & ending by lines length. The package contains **32 & 64 bit version** of the **Hash Compiler language** & universal programming editor called **Hash Editor**. Hash Editor contains some examples which can be useful for new users. Hash Compiler is written in **C++**, Hash Editor in **C#**.
+**Hash Compiler** is a procedural & linear interpreted language written in C++ using .Net Framework 4.8. The development started in 2017, I was student on high school playing around programming stuff and trying to make something initiative. The language itself is quite easy to understand, uses shortcuts, supports dynamic variables, custom functions, ‘line jumps’, file streaming Input/Output & additional user-friendly methods. Compiler runs linearly, starting by zero line & ending by total length. The package contains **32 & 64 bit version** of the **Hash Compiler language** and universal programming editor called **Hash Editor**. Hash Editor contains some examples which can be useful for new users. Hash Compiler is written in **C++**, Hash Editor in **C#**.
 
 ### **Why did I wrote this language?**
-Well, I wanted something more challenging as I love complications & I think it's been done pretty well. I just love making unusual things especially initiative/creative applications where users can use their own logic and create something new in a short period of time.
+Well, I wanted something more challenging as I love complications & I think it's been done pretty well. I just love making unusual things especially initiative/creative applications where users can use their own logic and create something new in a short period of time. Also I wanted to expand my knowledge about programming and technology in general by practicing this kind of stuff!
 
 ### **Installation**
 It's important to install correct Hash Compiler version. If your CPU is 32bit, use 32bit Setup, otherwise use 64bit. I suggest to install Hash Compiler pack to **any other drive except C** *(If so, you wouldn't be able to create files)*.
 
 ### **Syntax & Semantics**
-Hash Compiler is a language where every statement & command starts with **#** (obviously). Uses shortcuts which represent functional statements. Statements are divided into 2 types: Static & Dynamic statements. What is the difference?\
+Hash Compiler is a language in which every statement & command starts with **#** (obviously). Uses shortcuts which represent functional statements. Statements are divided into 2 types: Static & Dynamic statements. What is the difference?\
 • Static Statements (console-out/in, file-in/out) usually use **;** character (or might be **|** or none) at the end of the line.\
 • Dynamic Statements *(calculations, conditions, substring)* use **}** character at the end of the line. Spaces between statements are very important, please write statements exactly as they are in their basic form & try not to make additional spaces.\
 *Why is that? Dynamic statements mostly continues in line below the statement.*\
