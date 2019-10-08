@@ -13,7 +13,7 @@ It's important to install correct Hash Compiler version. If your CPU is 32bit, u
 Hash Compiler is a language in which every statement & command starts with **#** (obviously). Uses shortcuts which represent functional statements. Statements are divided into 2 types: Static & Dynamic statements. What is the difference?\
 • Static Statements (console-out/in, file-in/out) usually use **;** character (or might be **|** or none) at the end of the line.\
 • Dynamic Statements *(calculations, conditions, substring)* use **}** character at the end of the line. Spaces between statements are very important, please write statements exactly as they are in their basic form & try not to make additional spaces.\
-*Why is that? Dynamic statements mostly continues in line below the statement.*\
+*Why is that? Dynamic statement mostly continues in line below the statement.*\
 **Each line can hold just one statement**, otherwise the compiler will evaluate syntax error.\
 Compiler ignores unknown characters, basically you can write anything else to make 'comments'.
 
@@ -29,7 +29,7 @@ Compiler ignores unknown characters, basically you can write anything else to ma
 
 | Statement | Description | Formal Example |
 | --- | --- | --- |
-| #HELP | *Full documentation will be shown in console* | No example, use format above |
+| #HELP | *Full documentation will be shown in console* | No example, use original format |
 | #DATE | *Get actual date format* | `#CHAR>VarName:#DATE;` |
 | #GET_VAR | *Get all internal variables by name in lines (-l) by name in rows (-r) by value in lines (-v) by value in rows (-vr) & get count of available variables (-n)* | `#GET_VAR-vr` |
 | #SLEEP | *Pause program in a specific period of time (miliseconds)* | `#SLEEP NumericValue` |
@@ -70,7 +70,7 @@ Compiler ignores unknown characters, basically you can write anything else to ma
 | Statement | Description | Formal Example |
 | --- | --- | --- |
 | #CALC | *Default calculation process of natural numbers. You can create a new variable by adding VarName after operation symbol* | `#CALC+ or #CALC/VarName{NEWLINE}Number or VarName {SPACE} Number or VarName}` |
-| #RAND | *Get random number from-to* | `#NUM>VarName:#RANDvalueFrom-ValueTo|` |
+| #RAND | *Get random number from-to* | #NUM>VarName:#RANDvalueFrom-ValueTo| |
 
 <br/>
 <br/>
@@ -82,13 +82,13 @@ Compiler ignores unknown characters, basically you can write anything else to ma
 | --- | --- | --- |
 | #SUBCHAR | *Substring or divide character variable* | `#SUBCHAR>StartIndex>Length=ToExistsCHARVariable}` |
 | #SUBCHAR | *Substring or divide character variable & create new variable* | `#SUBCHAR<StartIndex<Length=NewCHARVariable<FromExistsCHARVariable}` |
-| #ACHAR | *dd characters to exist variable* | `#SUBCHAR>VarName1+VarName2;` |
+| #ACHAR | *add characters to exist variable* | `#SUBCHAR>VarName1+VarName2;` |
 
 <br/>
 <br/>
 
 **File Streaming (Create, Delete, Read)**\
-*File streaming allows you to control your files/ folders in your computer. It might be very risky as you can clearly delete your important folder or even drive. Testing on external & empty drive is recommended.*
+*File streaming allows you to control your files/ folders in your computer. It might be very risky as you can clearly delete your important folder or even drive. Testing on external & empty drive is recommended. I'm not responsible of losing your data.*
 
 | Statement | Description | Formal Example |
 | --- | --- | --- |
