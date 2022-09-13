@@ -3,7 +3,7 @@
 ### **About**
 **Hash Compiler** is a procedural & linear interpreted language written in C++ using .Net Framework 4.8. The development started in 2017, I was student on high school playing around programming stuff and trying to make something initiative. The language itself is quite easy to understand, uses shortcuts, supports dynamic variables, custom functions, ‘line jumps’, file streaming Input/Output & additional user-friendly methods. Compiler runs linearly, starting by zero line & ending by total length. The package contains **32 & 64 bit version** of the **Hash Compiler language** and universal programming editor called **Hash Editor**. Hash Editor contains some examples which can be useful for new users. Hash Compiler is written in **C++**, Hash Editor in **C#**.
 
-### **Why did I wrote this language?**
+### **Why did I write this language?**
 Well, I wanted something more challenging as I love complications & I think it's been done pretty well. I just love making unusual things especially initiative/creative applications where users can use their own logic and create something new in a short period of time. Also I wanted to expand my knowledge about programming and technology in general by practicing this kind of stuff!
 
 ### **Installation**
